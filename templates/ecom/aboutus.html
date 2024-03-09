@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-STORE || </title>
+
+  <title>E-STORE</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <h1 style="text-align:center;">ABOUT US</h1><br>
+<h3 style="text-align:justify;">“Welcome to our vibrant corner of the internet, where creativity meets convenience! Simran, Pratik, and Sanika proudly present our handcrafted ecommerce platform, where every click leads you to a world of unique finds.<br>
+
+  Dive into our curated collection, carefully selected to reflect our passion for quality and innovation. From trendy fashion pieces to timeless home decor, we've got something for everyone.<br>
+  
+  With Simran's eye for detail, Pratik's knack for technology, and Sanika's dedication to customer satisfaction, we've crafted an online shopping experience that's as seamless as it is enjoyable.<br>
+  
+  Browse with confidence, knowing that each item has been thoughtfully sourced and vetted to ensure it meets our high standards. Plus, our user-friendly interface makes it easy to find exactly what you're looking for, whether you're shopping on your laptop or from the palm of your hand.<br>
+  
+  Join us on this journey of discovery and delight, as we redefine the way you shop online. Thank you for choosing our mini project - we can't wait to see what treasures you uncover!” </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
